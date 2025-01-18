@@ -1,16 +1,19 @@
 {
-  "name": "bioshuttle",
+  "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "build": "nuxt build",
+    "dev": "nuxi dev",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "postinstall": "nuxi prepare",
+    "deploy": "gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
-    "chart.js": "^4.4.7",
-    "gridsome": "^0.7.0",
-    "vue-chartjs": "^5.3.2"
+    "gh-pages": "^6.3.0",
+    "nuxt": "^3.15.2",
+    "vue": "latest",
+    "vue-router": "latest"
   }
 }
