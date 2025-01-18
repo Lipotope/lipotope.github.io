@@ -1,0 +1,16 @@
+{
+  "name": "bioshuttle",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.7",
+    "gridsome": "^0.7.0",
+    "vue-chartjs": "^5.3.2"
+  }
+}
